@@ -1,0 +1,12 @@
+name: 'Install Terraform'
+description: 'Installs Terraform from a binary'
+runs:
+  using: 'composite'
+  steps:
+    - name: Download Terraform binary
+      shell: bash
+      run: |
+        wget https://raw.githubusercontent.com/Avichank/terraform-russia/main/bin/terraform -O terraform
+        chmod +x terraform
+        sudo mv terraform /usr/local/bin/
+        terraform version
