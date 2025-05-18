@@ -6,7 +6,6 @@ runs:
     - name: Download Terraform binary
       shell: bash
       run: |
-        wget https://raw.githubusercontent.com/Avichank/terraform-russia/main/bin/terraform -O terraform
-        chmod +x terraform
-        sudo mv terraform /usr/local/bin/
-        terraform version
+        wget https://raw.githubusercontent.com/Avichank/terraform-russia/main/bin/terraform -O terraform-binary
+        chmod +x terraform-binary
+        sudo mv terraform-binary /usr/local/bin/terraform
